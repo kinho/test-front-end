@@ -6,7 +6,7 @@ Components:
   - Home: Página inicial
   - UserList: Componente responsável por renderizar lista de usuários com barra de busca para filtro por nome e idade.
 
-Serices:
+Services:
   - user: Abstrai requisições referentes a entidade usuário.
 
 Libraries usadas:
