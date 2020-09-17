@@ -15,3 +15,18 @@ Libraries usadas:
   - lodash - debounce para melhor performance do filtro de usuários
   - react-virtualized - react component para renderização eficiente de grandes listas
   - styled-components - lib que facilita a escrita de estilos no component (js)
+
+
+## Instalação
+
+Instalação:
+
+`npm install`  
+
+Iniciar Server:
+
+`npm start`  
+
+App:
+
+`localhost:3000/`
