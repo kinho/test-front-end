@@ -1,0 +1,13 @@
+.wrapper-p {
+  max-width: 500px;
+}
+
+.wrapper-list {
+  height: calc(100vh - 300px);
+  margin-top: 20px;
+}
+
+.user-list {
+  border: 1px solid black;
+  box-sizing: border-box;
+}
