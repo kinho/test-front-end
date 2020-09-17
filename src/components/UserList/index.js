@@ -3,10 +3,16 @@ import { AutoSizer, Column, Table } from 'react-virtualized'
 import { Form, Col, Spinner } from 'react-bootstrap'
 import _ from 'lodash'
 
-import { getUsers } from '../../services/user'
+import { getUsers } from 'services/user'
 
 import 'react-virtualized/styles.css'
 import './styles.css'
+
+const WrappedSpinner = () => (
+  <div className="d-flex justify-content-center">
+    <Spinner animation="border" />
+  </div>
+)
 
 export default () => {
   const [loading, setLoading] = useState(true)
@@ -45,12 +51,6 @@ export default () => {
     ))
     setFilteredUsers(arrFiltered)
   }
-
-  const WrappedSpinner = () => (
-    <div className="d-flex justify-content-center">
-      <Spinner animation="border" />
-    </div>
-  )
 
   return (
     <div className="d-flex justify-content-center">
