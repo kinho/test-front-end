@@ -8,7 +8,57 @@
   margin-top: 20px;
 }
 
-.user-list {
-  border: 1px solid black;
-  box-sizing: border-box;
+.wrapper-spinner {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  padding: 50px;
+  border-left: 1px solid #D3D3D3;
+}
+
+/*** Overrides for react-virtualized styles ***/
+.ReactVirtualized__Table__Grid {
+    background-color: white;
+    border-bottom: 1px solid #D3D3D3;
+    border-right: 1px solid #D3D3D3;
+}
+
+.ReactVirtualized__Table__headerColumn {
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid #D3D3D3;
+  display: flex;
+  flex: 1;
+  height: 100%;
+  min-width: 0;
+}
+
+.ReactVirtualized__Table__headerColumn:last-child {
+  border-right: none;
+}
+
+.ReactVirtualized__Table__headerRow {
+    background-image: linear-gradient(#fff, #efefef);
+    border: 1px solid #D3D3D3;
+    border-radius: 4px 4px 0 0;
+}
+
+.ReactVirtualized__Table__row {
+    border-bottom: 1px solid #D3D3D3;
+    border-left: 1px solid #D3D3D3;
+}
+
+.ReactVirtualized__Table__rowColumn {
+    align-items: center;
+    border-right: 1px solid #D3D3D3;
+    display: flex;
+    flex: 1;
+    height: 100%;
+    min-width: 0;
+    padding-left: 4px;
+}
+
+.ReactVirtualized__Table__rowColumn:last-child {
+  border-right: none;
 }

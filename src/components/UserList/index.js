@@ -9,7 +9,7 @@ import 'react-virtualized/styles.css'
 import './styles.css'
 
 const WrappedSpinner = () => (
-  <div className="d-flex justify-content-center">
+  <div className="wrapper-spinner">
     <Spinner animation="border" />
   </div>
 )
@@ -74,14 +74,14 @@ export default () => {
               <Table
                 width={width}
                 height={height}
-                headerHeight={50}
-                rowHeight={30}
+                headerHeight={40}
+                rowHeight={35}
                 rowCount={filteredUsers.length}
                 rowGetter={({ index }) => filteredUsers[index]}
                 noRowsRenderer={() => loading ? <WrappedSpinner /> : null}
               >
-                <Column label='Name' dataKey='name' width={300} />
-                <Column label='Age' dataKey='age' width={200} />
+                <Column label='Name' dataKey='name' width={350} />
+                <Column label='Age' dataKey='age' width={150} />
               </Table>
             )}
           </AutoSizer>

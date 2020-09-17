@@ -7,7 +7,7 @@ export default () => (
   <Container className="p-3">
     <Jumbotron>
       <h1 className="header d-flex justify-content-center">
-        7Apps font-end test!
+        SEVENAPPS FRONT-END TEST
       </h1>
     </Jumbotron>
 

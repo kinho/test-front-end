@@ -1,16 +1,17 @@
 # Teste Front-End | SevenApps
 
-O seu desáfio será de criar uma pagina web, em React.js, com uma listagem para exibir o nome e a idade dos usuários e que seja possível filtrar os usuários por nome ou idade. O estilo da pagina e dos componentes fica ao seu critério.
+A aplicação React.js contém os componentes Home e UserList, e o serviço user. 
 
-Vamos analisar os seguintes pontos:
+Components:
+  - Home: Página inicial
+  - UserList: Componente responsável por renderizar lista de usuários com barra de busca para filtro por nome e idade.
 
+Serices:
+  - user: Abstrai requisições referentes a entidade usuário.
 
-- Organização do código
-- Separação dos componentes
-- Performance
-- Estilo dos componentes
-- Testes unitários(se possível)
-- Libraries usadas
-
-
-###  Api para busca dos usuários: GET https://random-persons.herokuapp.com/users
+Libraries usadas:
+  - axios - http client para realizar as requisições
+  - react-bootstrap - react components com estilos bootstrap
+  - lodash - debounce para melhor performance do filtro de usuários
+  - react-virtualized - react component para renderização eficiente de grandes listas
+  - styled-components - lib que facilita a escrita de estilos no component (js)
